@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int rollno[4];
+
+  cout<<"Please Enter 4 Students' Roll no. : "<<endl;
+
+  for(int i=0 ; i<4 ; i++)
+    {
+      cin>>rollno[i];
+    }
+
+  cout<<"All Students Roll no. are : "<<endl;
+for(int i=0 ; i<4 ; i++)
+{
+  cout<<rollno[i]<<" ";
+}
+return 0;
+}

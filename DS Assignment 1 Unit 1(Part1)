@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int id1;
+	int id2;
+	int id3;
+	string title1;
+	string title2;
+	string title3;
+	
+	cout<<"Please Enter Book 1 ID: "<<endl;
+	cin>>id1;
+	cout<<"Please Enter Book 2 ID: "<<endl;
+	cin>>id2;
+	cout<<"Please Enter Book 3 ID: "<<endl;
+	cin>>id3;
+	
+	cout<<"\nPlease Enter Book 1 Title: "<<endl;
+	cin>>title1;
+	cout<<"Please Enter Book 2 Title: "<<endl;
+	cin>>title2;
+	cout<<"Please Enter Book 3 Title: "<<endl;
+	cin>>title3;
+	
+	cout<<"\n \t .....Book Details.....\t \n";
+	cout<<"Book 1 ID: "<<id1<<endl;
+	cout<<"Book 1 Title: "<<title1<<endl;
+	cout<<"\nBook 2 ID: "<<id2<<endl;
+	cout<<"Book 2 Title: "<<title2<<endl;
+	cout<<"\nBook 3 ID: "<<id3<<endl;
+	cout<<"Book 3 Title: "<<title3<<endl;
+	cout<<"\t THANK YOU!!! "<<endl;
+	return 0;
+	
+}

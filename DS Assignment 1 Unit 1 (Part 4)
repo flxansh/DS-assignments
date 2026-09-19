@@ -1,0 +1,89 @@
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+    int book[10]; 
+    int n = 0; 
+    int choice; 
+    int searchID; 
+
+    do 
+    { 
+        cout << "\n\n===== SMART LIBRARY ====="; 
+        cout << "\n1. Add Book"; 
+        cout << "\n2. Display Books"; 
+        cout << "\n3. Search Book"; 
+        cout << "\n4. Exit"; // Fixed: Added missing semicolon
+        cout << "\nEnter your choice: "; 
+        cin >> choice; 
+
+        if (choice == 1) 
+        { 
+            if (n < 10) 
+            {
+                cout << "Enter Book ID: "; 
+                cin >> book[n]; 
+                n++; 
+                cout << "Book Added!"; 
+            }
+            else
+            {
+                cout << "Library is full! Cannot add more books.";
+            }
+        } 
+        else if (choice == 2) 
+{ 
+    cout << "\nTotal books count (n): " << n << endl; 
+
+    if (n == 0)
+    {
+        cout << "No books in the library yet.\n";
+    }
+    else
+    {
+        cout << "Books in Library:\n"; 
+        for (int i = 0; i < n; i++) 
+        { 
+            cout << "Index " << i << ": ID = " << book[i] << endl; 
+        } 
+    }
+} 
+        else if (choice == 3) 
+        { 
+            cout << "Enter Book ID to search: "; 
+            cin >> searchID; 
+            bool found = false; 
+
+            for (int i = 0; i < n; i++) 
+            { 
+                if (book[i] == searchID) 
+                { 
+                    found = true; 
+                    break; 
+                } 
+            } 
+
+            
+            if (found) 
+            { 
+                cout << "Book Found!"; 
+            } 
+            else 
+            { 
+                cout << "Book Not Found!"; 
+            } 
+        } 
+        else if (choice == 4) 
+        { 
+            cout << "Thank you!"; 
+        } 
+        else 
+        { 
+            cout << "Invalid Choice!"; 
+        } 
+
+    } while (choice != 4); 
+
+    return 0; 
+}

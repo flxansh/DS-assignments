@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int rollno[6];
+    int search_rollno;
+
+    cout<<"Please Enter 6 Students' Roll numbers: "<<endl;
+    for(int x=0 ; x<6 ; x++)
+        {
+            cin>>rollno[x];
+        }
+    cout<<"Which roll number to search? " " "<<endl;
+    cin>>search_rollno;
+    for(int x=0 ; x<6 ; x++)
+        {
+            if(search_rollno == rollno[x])
+            {
+                cout<<"Student Found!"<<endl;
+                return 0;
+            }
+        }
+    
+    cout<<"Student Not Found!!"<<endl;
+    return 0;
+}

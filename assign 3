@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int book[5];
+int temp;
+// Input Book IDs
+cout << "Enter IDs of 5 Library Books:\n";
+for (int i = 0; i < 5; i++)
+{
+cin >> book[i];
+}
+// Bubble Sort
+for (int i = 0; i < 4; i++)
+{
+for (int j = 0; j < 4 - i; j++)
+{
+if (book[j] > book[j + 1])
+{
+temp = book[j];
+book[j] = book[j + 1];
+book[j + 1] = temp;
+}
+}
+}
+// Display sorted Book IDs
+cout << "\nBook IDs in Ascending Order:\n";
+for (int i = 0; i < 5; i++)
+{
+cout << book[i] << " ";
+}
+return 0;
+}
